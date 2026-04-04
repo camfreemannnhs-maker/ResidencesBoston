@@ -283,8 +283,8 @@
         <h2>Sell the right stay, not the same CTA to everyone</h2>
         <p class="lead">A visitor shopping for one night should see something different than a visitor planning a 30-day assignment. This planner lets the site change its sales posture based on how long someone intends to stay.</p>
         <div class="sales-lab-actions">
-          <a href="contact.html" class="btn btn-primary btn-lg" data-stay-cta>Book a month →</a>
-          <a href="contact.html" class="btn btn-secondary btn-lg" data-stay-secondary>Talk to our team</a>
+          <a href="contact.html?duration=30&message=I%20would%20like%20a%20monthly%20quote." class="btn btn-primary btn-lg" data-stay-cta>Book a month →</a>
+          <a href="contact.html?message=I%20would%20like%20to%20speak%20with%20the%20Residences%20team." class="btn btn-secondary btn-lg" data-stay-secondary>Talk to our team</a>
         </div>
       </div>
       <div class="sales-lab-panel">
@@ -301,9 +301,9 @@
           <p data-stay-copy>For 30+ day stays, the full value story becomes clear: full kitchens, in-unit laundry, parking, and a far more livable setup than a normal hotel room.</p>
         </div>
         <div class="sales-range-links">
-          <a href="contact.html">Book a tour</a>
-          <a href="contact.html">Book a night</a>
-          <a href="contact.html">Book a month</a>
+          <a href="contact.html?message=I%20would%20like%20to%20schedule%20a%20property%20tour." data-stay-link data-message="I would like to schedule a property tour.">Book a tour</a>
+          <a href="contact.html?duration=1&message=I%20would%20like%20nightly%20availability." data-stay-link data-duration="1" data-message="I would like nightly availability.">Book a night</a>
+          <a href="contact.html?duration=30&message=I%20would%20like%20a%20monthly%20quote." data-stay-link data-duration="30" data-message="I would like a monthly quote.">Book a month</a>
         </div>
       </div>
     </div>
@@ -350,6 +350,114 @@
     <div class="savings-cta">
       <p class="savings-tagline">A cleaner option for teams, clinicians, and guests who need to <span>live well for longer.</span></p>
       <a href="contact.html" class="btn btn-primary btn-lg">See Availability →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="insights">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Portfolio Intelligence</span>
+      <h2>Show the value. Show the reach. Close faster.</h2>
+      <p>The brand should help people make a housing decision quickly. These visuals make the portfolio feel more institutional, measurable, and useful.</p>
+    </div>
+    <div class="insight-grid">
+      <div class="insight-panel">
+        <div class="insight-panel-head">
+          <span class="insight-kicker">Rate Snapshot</span>
+          <h3>Starting monthly rates across the portfolio</h3>
+          <p>Published entry-point pricing for each property, presented in one place so the brand feels like a real platform.</p>
+        </div>
+        <div class="rate-bars">
+          <div class="rate-bar">
+            <div class="rate-bar-label">
+              <strong>Merrimack, NH</strong>
+              <span>Residences at Daniel Webster</span>
+            </div>
+            <div class="rate-bar-track"><div class="rate-bar-fill" style="width:86%;"></div></div>
+            <div class="rate-bar-value">$2,400</div>
+          </div>
+          <div class="rate-bar">
+            <div class="rate-bar-label">
+              <strong>Marlborough, MA</strong>
+              <span>Residences at Solomon Pond</span>
+            </div>
+            <div class="rate-bar-track"><div class="rate-bar-fill" style="width:93%;"></div></div>
+            <div class="rate-bar-value">$2,600</div>
+          </div>
+          <div class="rate-bar">
+            <div class="rate-bar-label">
+              <strong>Tewksbury, MA</strong>
+              <span>Residences at International Place</span>
+            </div>
+            <div class="rate-bar-track"><div class="rate-bar-fill" style="width:100%;"></div></div>
+            <div class="rate-bar-value">$2,800</div>
+          </div>
+        </div>
+        <p class="insight-note">Rates shown are current starting monthly all-inclusive figures from the live property pages and help frame the brand as a portfolio, not three disconnected websites.</p>
+      </div>
+      <div class="insight-panel insight-panel-dark">
+        <div class="insight-panel-head">
+          <span class="insight-kicker">Market Reach</span>
+          <h3>Three properties pulling from nine search markets</h3>
+          <p>Each property page is being positioned to serve a larger regional demand cluster instead of just its street address.</p>
+        </div>
+        <div class="market-clusters">
+          <div class="cluster-card">
+            <div class="cluster-top">
+              <div class="cluster-node">Marlborough</div>
+              <div class="cluster-route">Worcester / MetroWest</div>
+            </div>
+            <div class="cluster-tags">
+              <span>Worcester</span>
+              <span>Natick</span>
+              <span>Framingham</span>
+            </div>
+          </div>
+          <div class="cluster-card">
+            <div class="cluster-top">
+              <div class="cluster-node">Tewksbury</div>
+              <div class="cluster-route">North Boston Corridor</div>
+            </div>
+            <div class="cluster-tags">
+              <span>Woburn</span>
+              <span>Billerica</span>
+              <span>Burlington</span>
+              <span>Andover</span>
+              <span>Greater Boston</span>
+            </div>
+          </div>
+          <div class="cluster-card">
+            <div class="cluster-top">
+              <div class="cluster-node">Merrimack</div>
+              <div class="cluster-route">Southern New Hampshire</div>
+            </div>
+            <div class="cluster-tags">
+              <span>Nashua</span>
+              <span>Manchester</span>
+              <span>Concord</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="proof-strip">
+      <div class="proof-tile">
+        <strong data-count="50" data-suffix="+">0</strong>
+        <span>years of management history behind the portfolio brand</span>
+      </div>
+      <div class="proof-tile">
+        <strong data-count="3">0</strong>
+        <span>fully branded hotel properties operating under one sales story</span>
+      </div>
+      <div class="proof-tile">
+        <strong data-count="9">0</strong>
+        <span>priority city markets being pulled into the geo and SEO strategy</span>
+      </div>
+      <div class="proof-tile">
+        <strong data-count="1">0</strong>
+        <span>direct booking funnel for tours, nights, months, corporate, and insurance demand</span>
+      </div>
     </div>
   </div>
 </section>
@@ -405,7 +513,7 @@
         <div class="segment-icon">🔥</div>
         <h4>Fire &amp; Flood Displacement</h4>
         <p>Stability, speed, and a more residential stay for households navigating a disruptive insurance event.</p>
-        <a href="contact.html" class="segment-tag">Get Emergency Housing →</a>
+        <a href="corporate.html" class="segment-tag">Get Emergency Housing →</a>
       </div>
       <div class="segment-card">
         <div class="segment-icon">🚚</div>
@@ -417,13 +525,13 @@
         <div class="segment-icon">🎓</div>
         <h4>Interns &amp; Co-ops</h4>
         <p>Structured short-term housing for interns and co-ops who need something more professional than an apartment scramble.</p>
-        <a href="contact.html" class="segment-tag">Intern Housing →</a>
+        <a href="summer-intern-housing.html" class="segment-tag">Intern Housing →</a>
       </div>
       <div class="segment-card">
         <div class="segment-icon">🏗️</div>
         <h4>Construction &amp; Project Crews</h4>
         <p>Operationally simple furnished housing for crews, contractors, and longer field deployments.</p>
-        <a href="contact.html" class="segment-tag">Crew Packages →</a>
+        <a href="corporate.html" class="segment-tag">Crew Packages →</a>
       </div>
       <div class="segment-card">
         <div class="segment-icon">☀️</div>
@@ -441,7 +549,49 @@
         <div class="segment-icon">📋</div>
         <h4>Insurance Housing</h4>
         <p>Temporary furnished housing for adjusters, carriers, and displaced households who need a stable next step.</p>
-        <a href="contact.html" class="segment-tag">Insurance Housing →</a>
+        <a href="corporate.html" class="segment-tag">Insurance Housing →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Conversion Paths</span>
+      <h2>Different buyers need different next steps</h2>
+      <p>The brand should feel adaptive. Someone comparing a one-night stay needs a different path than an intern coordinator or a relocation manager planning a month.</p>
+    </div>
+    <div class="conversion-grid">
+      <div class="conversion-card">
+        <span class="conversion-step">Path 01</span>
+        <h3>Book a tour</h3>
+        <p>Use this path for buyers who need trust, a walkthrough, or a fast human touch before committing. It works especially well for corporate, relocation, and intern coordinators.</p>
+        <div class="conversion-meta">
+          <span>Human touch</span>
+          <span>Fast qualification</span>
+        </div>
+        <a href="contact.html?message=I%20would%20like%20to%20schedule%20a%20property%20tour." class="btn btn-secondary">Schedule a Tour</a>
+      </div>
+      <div class="conversion-card">
+        <span class="conversion-step">Path 02</span>
+        <h3>Book a night</h3>
+        <p>Use nightly entry as a lower-friction way to convert guests who want to experience the product first and then extend if the stay grows.</p>
+        <div class="conversion-meta">
+          <span>Low friction</span>
+          <span>Trial stay</span>
+        </div>
+        <a href="contact.html?duration=1&message=I%20would%20like%20nightly%20availability." class="btn btn-secondary">Request Nightly Rates</a>
+      </div>
+      <div class="conversion-card">
+        <span class="conversion-step">Path 03</span>
+        <h3>Book a month</h3>
+        <p>This is the highest-value path. It lets the site sell the full suite story: full kitchens, in-unit laundry, parking, predictable pricing, and easier month-plus living.</p>
+        <div class="conversion-meta">
+          <span>Best margin</span>
+          <span>Best value story</span>
+        </div>
+        <a href="contact.html?duration=30&message=I%20would%20like%20a%20monthly%20quote." class="btn btn-primary">Request Monthly Quote</a>
       </div>
     </div>
   </div>
@@ -715,6 +865,42 @@
   </div>
 </section>
 
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Content Sales Engine</span>
+      <h2>Trust pages that help the brand sell</h2>
+      <p>A serious site should not make visitors guess why they should believe the offer. These pages let the portfolio sell with proof, management credibility, and direct comparisons.</p>
+    </div>
+    <div class="content-sales-grid">
+      <a href="management.html" class="content-sales-card">
+        <span>Management</span>
+        <h3>50+ years of operating trust</h3>
+        <p>Anchor the brand to the management company behind it, including stewardship, longevity, and community work.</p>
+        <strong>View management story →</strong>
+      </a>
+      <a href="testimonials.html" class="content-sales-card">
+        <span>Proof</span>
+        <h3>Testimonials that lower resistance</h3>
+        <p>Collect guest, partner, and corporate feedback into one clean proof page that supports direct-booking confidence.</p>
+        <strong>Read testimonials →</strong>
+      </a>
+      <a href="why-not-airbnb.html" class="content-sales-card">
+        <span>Comparison</span>
+        <h3>Why we beat Airbnb for longer stays</h3>
+        <p>Sell predictability, professional management, kitchens, laundry, and a better month-plus operating experience.</p>
+        <strong>See the Airbnb comparison →</strong>
+      </a>
+      <a href="why-not-extended-stay-america.html" class="content-sales-card">
+        <span>Positioning</span>
+        <h3>Why the suite format wins over chain extended stay</h3>
+        <p>Show the difference between kitchenette-level accommodation and a genuinely livable fully furnished suite setup.</p>
+        <strong>View the chain comparison →</strong>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section faq" id="faq">
   <div class="container">
@@ -787,8 +973,8 @@
         <a href="corporate.html">Corporate Housing</a>
         <a href="corporate.html">Insurance / ALE Housing</a>
         <a href="corporate.html">Relocation Programs</a>
-        <a href="contact.html">Interns & Co-ops</a>
-        <a href="contact.html">Construction Crews</a>
+        <a href="summer-intern-housing.html">Interns &amp; Co-ops</a>
+        <a href="corporate.html">Construction Crews</a>
       </div>
       <div class="footer-col">
         <h5>Contact</h5>
@@ -796,15 +982,17 @@
         <a href="tel:+19788639800">📞 Tewksbury: (978) 863-9800</a>
         <a href="tel:+16034248100">📞 Merrimack: (603) 424-8100</a>
         <a href="contact.html">Get a Quote</a>
+        <a href="management.html">Management</a>
+        <a href="testimonials.html">Testimonials</a>
         <a href="#faq">FAQ</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2025 Residences Extended Stay. All rights reserved. Diversified Funding Inc., Boston MA.</p>
       <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Accessibility</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="accessibility.html">Accessibility</a>
       </div>
     </div>
   </div>

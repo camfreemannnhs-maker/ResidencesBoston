@@ -455,6 +455,255 @@ p { font-size: 1rem; line-height: 1.75; }
 }
 .savings-tagline span { color: var(--gray); }
 
+/* ── Insight Dashboard ── */
+.insight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.insight-panel {
+  background: linear-gradient(135deg, var(--white) 0%, var(--ivory) 100%);
+  border: 1px solid rgba(16,35,63,.08);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+}
+.insight-panel-dark {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 100%);
+  color: var(--white);
+}
+.insight-panel-head {
+  margin-bottom: 24px;
+}
+.insight-kicker {
+  display: inline-flex;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+.insight-panel-dark .insight-kicker {
+  color: rgba(255,255,255,.62);
+}
+.insight-panel-head h3 {
+  margin-bottom: 10px;
+}
+.insight-panel-head p {
+  color: var(--gray);
+  font-size: .95rem;
+}
+.insight-panel-dark .insight-panel-head p {
+  color: rgba(255,255,255,.72);
+}
+.rate-bars {
+  display: grid;
+  gap: 18px;
+}
+.rate-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+}
+.rate-bar-label strong {
+  display: block;
+  color: var(--navy);
+  font-size: .96rem;
+}
+.rate-bar-label span {
+  color: var(--gray);
+  font-size: .8rem;
+}
+.rate-bar-track {
+  position: relative;
+  height: 12px;
+  background: rgba(16,35,63,.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.rate-bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--navy) 0%, var(--navy-mid) 100%);
+}
+.rate-bar-value {
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -.03em;
+}
+.insight-note {
+  margin-top: 18px;
+  color: var(--gray);
+  font-size: .82rem;
+}
+.market-clusters {
+  display: grid;
+  gap: 16px;
+}
+.cluster-card {
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.1);
+}
+.cluster-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.cluster-node {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--white);
+}
+.cluster-route {
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.56);
+}
+.cluster-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cluster-tags span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  color: rgba(255,255,255,.9);
+  font-size: .82rem;
+}
+.proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 28px;
+}
+.proof-tile {
+  background: var(--white);
+  border: 1px solid rgba(16,35,63,.08);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+}
+.proof-tile strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.proof-tile span {
+  display: block;
+  color: var(--gray);
+  font-size: .86rem;
+  line-height: 1.6;
+}
+
+/* ── Conversion Paths ── */
+.conversion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 56px;
+}
+.conversion-card {
+  background: var(--white);
+  border: 1px solid rgba(16,35,63,.08);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+.conversion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.conversion-step {
+  display: inline-flex;
+  margin-bottom: 16px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--ivory);
+  color: var(--navy-mid);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.conversion-card h3 {
+  margin-bottom: 12px;
+}
+.conversion-card p {
+  color: var(--gray);
+  font-size: .95rem;
+  margin-bottom: 20px;
+}
+.conversion-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.conversion-meta span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--ivory);
+  border: 1px solid var(--ivory-dk);
+  color: var(--navy);
+  font-size: .76rem;
+}
+
+/* ── Content Sales ── */
+.content-sales-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 56px;
+}
+.content-sales-card {
+  display: block;
+  background: linear-gradient(180deg, var(--white) 0%, var(--ivory) 100%);
+  border: 1px solid rgba(16,35,63,.08);
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+.content-sales-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.content-sales-card span {
+  display: inline-flex;
+  margin-bottom: 16px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.content-sales-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.content-sales-card p {
+  color: var(--gray);
+  font-size: .92rem;
+  margin-bottom: 16px;
+}
+.content-sales-card strong {
+  color: var(--navy-mid);
+  font-size: .88rem;
+}
+
 /* ── Segments ── */
 .segments { background: var(--white); }
 .segments-grid {
@@ -1242,6 +1491,10 @@ p { font-size: 1rem; line-height: 1.75; }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-flow-grid { grid-template-columns: 1fr; }
   .sales-lab { grid-template-columns: 1fr; }
+  .insight-grid { grid-template-columns: 1fr; }
+  .proof-strip { grid-template-columns: repeat(2, 1fr); }
+  .conversion-grid { grid-template-columns: 1fr; }
+  .content-sales-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -1265,6 +1518,8 @@ p { font-size: 1rem; line-height: 1.75; }
   .integration-frame,
   .contact-intro-card { padding: 24px; }
   #calendly-embed { height: 620px; }
+  .rate-bar { grid-template-columns: 1fr; gap: 8px; }
+  .proof-strip { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
@@ -1272,6 +1527,7 @@ p { font-size: 1rem; line-height: 1.75; }
   .segments-grid { grid-template-columns: 1fr; }
   .trust-bar-inner { gap: 20px; }
   .trust-divider { display: none; }
+  .content-sales-grid { grid-template-columns: 1fr; }
 }
 
 /* ── Mobile Nav Menu ── */

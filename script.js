@@ -170,6 +170,14 @@ function initStayPlanner() {
   const copyEl = document.querySelector('[data-stay-copy]');
   const ctaEl = document.querySelector('[data-stay-cta]');
   const secondaryEl = document.querySelector('[data-stay-secondary]');
+  const plannerLinks = document.querySelectorAll('[data-stay-link]');
+
+  const buildPlannerHref = (message, duration) => {
+    const url = new URL('contact.html', window.location.href);
+    if (message) url.searchParams.set('message', message);
+    if (duration) url.searchParams.set('duration', duration);
+    return url.toString();
+  };
 
   const render = () => {
     const nights = Number(range.value);
@@ -181,6 +189,8 @@ function initStayPlanner() {
       if (copyEl) copyEl.textContent = 'For shorter stays, the site should sell ease, comfort, and the quality of the suite itself. Use a tour or trial stay to get people in the funnel.';
       if (ctaEl) ctaEl.textContent = 'Book a night →';
       if (secondaryEl) secondaryEl.textContent = 'Book a tour';
+      if (ctaEl) ctaEl.href = buildPlannerHref('I would like nightly availability.', String(nights));
+      if (secondaryEl) secondaryEl.href = buildPlannerHref('I would like to schedule a property tour.', String(nights));
       return;
     }
 
@@ -190,6 +200,8 @@ function initStayPlanner() {
       if (copyEl) copyEl.textContent = 'At this stage, you sell the transition away from nightly-hotel logic: more space, a kitchen, laundry, and less friction for a multi-week stay.';
       if (ctaEl) ctaEl.textContent = 'Book a tour →';
       if (secondaryEl) secondaryEl.textContent = 'Request a quote';
+      if (ctaEl) ctaEl.href = buildPlannerHref('I would like to schedule a property tour.', String(nights));
+      if (secondaryEl) secondaryEl.href = buildPlannerHref('I would like a quote for a flexible stay.', String(nights));
       return;
     }
 
@@ -198,7 +210,17 @@ function initStayPlanner() {
     if (copyEl) copyEl.textContent = 'For 30+ day stays, the full value story becomes clear: full kitchens, in-unit laundry, parking, and a far more livable setup than a normal hotel room.';
     if (ctaEl) ctaEl.textContent = 'Book a month →';
     if (secondaryEl) secondaryEl.textContent = 'Talk to our team';
+    if (ctaEl) ctaEl.href = buildPlannerHref('I would like a monthly quote.', String(nights));
+    if (secondaryEl) secondaryEl.href = buildPlannerHref('I would like to speak with the Residences team.', String(nights));
   };
+
+  plannerLinks.forEach(link => {
+    const message = link.dataset.message;
+    const duration = link.dataset.duration;
+    if (message || duration) {
+      link.href = buildPlannerHref(message, duration);
+    }
+  });
 
   range.addEventListener('input', render);
   render();
